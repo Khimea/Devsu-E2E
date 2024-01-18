@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: '19'
           cache: 'npm'
-          cache-dependency-path: '/package-lock.json'
+          cache-dependency-path: './package-lock.json'
       - name: install dependencias
         run: npm install
       - run: npm run test:cucumber
