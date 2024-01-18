@@ -18,6 +18,7 @@ class page {
    * ACCIONES SIMPLES
    */
   typeUserName = async (username) => {
+    await driver.sleep(1000);
     await driver.wait(until.elementLocated(login.userName())).then((el) => {
       driver.wait(until.elementIsVisible(el)).then((ele) => {
         ele.sendKeys(username);

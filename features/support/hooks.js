@@ -12,6 +12,6 @@ Before(async () => {
 });
 
 After(async (scenario) => {
-  //await utils.takeScreenshot(scenario);
-  //await driver.quit();
+  await utils.takeScreenshot(scenario);
+  await driver.quit();
 });
