@@ -1,6 +1,6 @@
 # Devsu-E2E Prueba tecnica
 
-# Proyecto desarrollado con Selenium + [Cucumber-JS](https://github.com/cucumber/cucumber-js)
+# Proyecto desarrollado con [Selenium](https://www.selenium.dev/selenium/docs/api/javascript/index.html) + [Cucumber-JS](https://github.com/cucumber/cucumber-js)
 
 ## Ejecucion simple
 
@@ -10,7 +10,7 @@
 - Instalar dependencia `npm install`
 - lanzar test `npm run test:cucumber`
 
----
+
 ### Features
 ---
 Compra.feature es el unico feature del proyecto.
@@ -19,9 +19,7 @@ Compra.feature es el unico feature del proyecto.
 - Escenario 3 = Completamos el login desde el gherkin
 - Escenario 4 = Completamos el login desde una tabla
 - Escenario 5 = Completamos el login y los productos desde la tabla
----
 
----
 
 - Modificar o agregar productos
   ```
