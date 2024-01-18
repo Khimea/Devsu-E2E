@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:cucumber": "cucumber-js features/*.feature"
+    "test:cucumber": "cucumber-js features/*.feature",
+    "test:report":"cucumber-js features/*.feature -f @cucumber/pretty-formatter -f json:output/TestReport_$(timestamp).json "
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "author": "Jerez Leonardo",
   "license": "ISC",
   "dependencies": {
+    "@cucumber/pretty-formatter": "^1.0.0",
     "cross-env": "^7.0.3",
     "selenium-webdriver": "^4.16.0"
   },
