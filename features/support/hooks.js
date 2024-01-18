@@ -6,6 +6,7 @@ const { Builder, Browser, Capabilities } = require("selenium-webdriver");
 const { Before, After } = require("@cucumber/cucumber");
 
 Before(async () => {
+  console.log(process.env.GIT);
   if (process.env.GIT == true) {
     const host = process.env.SELENIUM || "selenium";
     const navegador = process.env.BROWSER
