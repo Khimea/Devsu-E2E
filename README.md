@@ -2,7 +2,7 @@
 
 ## Proyecto desarrollado con [Selenium](https://www.selenium.dev/selenium/docs/api/javascript/index.html) + [Cucumber-JS](https://github.com/cucumber/cucumber-js)
 
-- Dependencia deframework [NodeJS](https://nodejs.org/en/download)
+- Dependencia de framework [NodeJS](https://nodejs.org/en/download)
 ### Ejecucion simple
 
 ---
