@@ -27,5 +27,10 @@ Compra.feature es el unico feature del proyecto.
     | Samsung galaxy s7 | Sony xperia z5 |
     | Nokia lumia 1520  | Sony vaio i7   |
   ```
+- Modificar usuario y contraseña
+  ```
+    | Username      | password     |
+    | standard_user | secret_sauce |
+  ```
 
 ---
