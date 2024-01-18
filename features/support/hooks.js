@@ -6,19 +6,7 @@ const { Builder, Browser, Capabilities } = require("selenium-webdriver");
 const { Before, After } = require("@cucumber/cucumber");
 
 Before(async () => {
-  console.log(process.env.GIT);
-  if (process.env.GIT == true) {
-    const host = process.env.SELENIUM || "selenium";
-    const navegador = process.env.BROWSER
-    const server = `http://${host}:4444/`;
-    global.driver = new Builder()
-      .usingServer(server)
-      .forBrowser(navegador)
-      .build();
-  } else {
-    global.driver = new Builder().forBrowser(Browser.CHROME).build();
-    
-  }
+  global.driver = new Builder().forBrowser(Browser.CHROME).build();
   driver.manage().window().maximize();
 });
 
