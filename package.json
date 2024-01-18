@@ -1,0 +1,24 @@
+{
+  "name": "test_tech",
+  "version": "1.0.0",
+  "description": "Prueba tecnica Devsu E2E",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:cucumber": "cucumber-js features/*.feature"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Khimea"
+  },
+  "keywords": [
+    "Selenium",
+    "E2E"
+  ],
+  "author": "Jerez Leonardo",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "selenium-webdriver": "^4.16.0"
+  }
+}
