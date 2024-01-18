@@ -8,11 +8,11 @@ const { Before, After } = require("@cucumber/cucumber");
 Before(async () => {
   if (process.env.GIT == true) {
     const host = process.env.SELENIUM || "selenium";
-    const browser = process.env.BROWSER
+    const navegador = process.env.BROWSER
     const server = `http://${host}:4444/`;
     global.driver = new Builder()
       .usingServer(server)
-      .forBrowser(Browser.browser)
+      .forBrowser(navegador)
       .build();
   } else {
     global.driver = new Builder().forBrowser(Browser.CHROME).build();
