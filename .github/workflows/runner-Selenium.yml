@@ -8,9 +8,9 @@ on:
         description: Which browser to test
         required: true
         options:
-          - chrome
-          - firefox
-          - edge
+          - CHROME
+          - FIREFOX
+          - EDGE
 
 jobs:
   test:
@@ -18,22 +18,25 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: node:18
-
+      image: node:19
+    services:
+        selenium:
+          image: selenium/standalone-${{ github.event.inputs.browser }}:latest
+          ports: 
+            - 4444:4444
+          options: --shm-size=2gb
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "19"
           cache: "npm"
           cache-dependency-path: "./package-lock.json"
-      - uses: browser-actions/setup-chrome@v1
-        id: setup-chrome
-      - run: ${{ steps.setup-chrome.outputs.chrome-path }} --version
       - name: install dependencias
         run: npm install
       - run: npm run test:cucumber
         env:
+          GIT: true
           BROWSER: ${{ github.event.inputs.browser }}
       - uses: actions/upload-artifact@v3
         if: always()
