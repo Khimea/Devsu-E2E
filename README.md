@@ -1,8 +1,8 @@
 # Devsu-E2E Prueba tecnica
 
-# Proyecto desarrollado con [Selenium](https://www.selenium.dev/selenium/docs/api/javascript/index.html) + [Cucumber-JS](https://github.com/cucumber/cucumber-js)
+## Proyecto desarrollado con [Selenium](https://www.selenium.dev/selenium/docs/api/javascript/index.html) + [Cucumber-JS](https://github.com/cucumber/cucumber-js)
 
-## Ejecucion simple
+### Ejecucion simple
 
 ---
 
