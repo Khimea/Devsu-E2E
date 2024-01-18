@@ -34,10 +34,10 @@ jobs:
           cache-dependency-path: "./package-lock.json"
       - name: install dependencias
         run: npm install
-      - run: npm run test:cucumber
         env:
           GIT: true
           BROWSER: ${{ github.event.inputs.browser }}
+      - run: npm run test:cucumber
       - uses: actions/upload-artifact@v3
         if: always()
         with:
