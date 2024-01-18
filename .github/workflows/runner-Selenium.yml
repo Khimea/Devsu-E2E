@@ -1,4 +1,4 @@
-name: Tmpl yml selenium
+name: Runner Devsu-E2E
 
 on:
   workflow_dispatch:
